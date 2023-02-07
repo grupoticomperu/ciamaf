@@ -3,8 +3,8 @@
         <div class="container-fluid">
             <div class="row mb-2">
             <div class="col-sm-6">
-              
-               
+
+
             </div><!-- /.col -->
             <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
@@ -18,7 +18,7 @@
 
 
     @section('content')
-        
+
     <section class="content">
         <div class="container-fluid">
 
@@ -32,14 +32,14 @@
                           <h3 class="card-title">Nuevo Servicio</h3>
                         </div>
 
-                        <div class="card-body"> 
+                        <div class="card-body">
 
                             {!! Form::model($service, ['route'=>['services.update', $service], 'autocomplete'=>'off', 'files'=>true, 'method'=>'put']) !!}
 
                                 {{-- {!! Form::hidden('user_id', auth()->user()->id) !!}     --}}
 
-                                
-                                @include('admin.services.partials.form')            
+
+                                @include('admin.services.partials.form')
 
                                 {!! Form::submit('Actualizar Servicio ', ['class'=>'btn btn-primary btn-block']) !!}
 
@@ -48,7 +48,7 @@
 
                     </div>
                 </div>
-            </div>    
+            </div>
 
         </div>
     </section>

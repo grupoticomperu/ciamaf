@@ -33,6 +33,9 @@
       <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" />
 
       <link rel="stylesheet" href="{{ asset('assets/css/style2.css') }}" />
+      <link rel="stylesheet" href="{{ asset('assets/css/normalize.css') }}" />
+      <link rel="stylesheet" href="{{ asset('assets/css/font-awesomee.min.css') }}" />
+      <link rel="stylesheet" href="{{ asset('assets/stylef.css') }}" />
 
 
       {{-- ckeditor --}}
@@ -42,6 +45,22 @@
   </head>
 
   <body>
+    <div class="social-body">
+        <ul>
+            @if($configurations->facebook)
+            <li class="facebook"><a href="{{ $configurations->facebook }}" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            @endif
+            {{-- <li class="twitter"><a href="#" target="_blank"><i class="fa fa-whatsapp"></i></a></li> --}}
+            @if($configurations->youtube)
+            <li class="youtube"><a href="{{ $configurations->youtube }}" target="_blank"><i class="fa fa-youtube"></i></a></li>
+            @endif
+
+            @if($configurations->instagram)
+            <li class="instagram"><a href="{{ $configurations->instagram }}" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            @endif
+            {{-- <li class="pinterest"><a href="#" target="_blank"><i class="fa fa-pinterest"></i></a></li> --}}
+        </ul>
+    </div>
 
     <div class="div_btn_pal">
         <div class="palpitar"></div>

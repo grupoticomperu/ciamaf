@@ -21,7 +21,7 @@
 
 
     <!--====== Breadcrumb Start ======-->
-    <section class="breadcrumb-section" style="background-image: url({{ Storage::disk("s3")->url($pagescontacts->imagen ) }});">
+    <section class="breadcrumb-section" style="background-image: url({{ Storage::disk("s3")->url($pagescontacts->imagen ) }} );">
         <div class="container">
             <span class="page-tag">FAMAIC</span>
             <h1 class="page-title">{{ $pagescontacts->title1 }}</h1>
@@ -68,7 +68,7 @@
                 <div class="col-lg-8 col-md-10">
                     @if(session()->has('flash'))
                       <div class="alert alert-success "><mark>{{ session('flash') }}</mark></div>
-                      @endif
+                    @endif
                     <div class="contact-form">
                         <form method="post" action="{{ route('contacts.store') }}">
                             {{ csrf_field() }}
@@ -106,6 +106,14 @@
 
                                   {!! $errors->first('email', '<span class=error>:message</span>')!!}
                                 </div>
+                              </div>
+                              <div class="col-md-12 mt-4">
+                                    {!! NoCaptcha::renderJs() !!}
+                                    {!! NoCaptcha::display() !!}
+
+                                    @error('g-recaptcha-response')
+                                          <small class="text-danger">{{ $message }}</small>
+                                    @enderror
                               </div>
                               <div class="col-md-12 mt-4">
                                 <button class="button button-block button-secondary button-ujarak main-btn main-btn-2" type="submit">Enviar mensaje</button>

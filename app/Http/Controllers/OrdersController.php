@@ -14,7 +14,8 @@ class OrdersController extends Controller
     		'name' => 'required',
             'movil'=>'required',
             'email'=>'required',
-            'message'=>'required'
+            'message'=>'required',
+            'g-recaptcha-response' => 'required|captcha'
     	]);
 
         Order::create([

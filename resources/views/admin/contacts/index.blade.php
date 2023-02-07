@@ -4,7 +4,7 @@
             <div class="row mb-2">
             <div class="col-sm-6">
                 <h1 class="m-0">Todas los Contactos </h1>
-                <a href="{{ route('contact.create')}}" class="btn btn-primary pull-right"><i class="fa fa-plus"> </i> Crear Contacto</a>
+               {{--  <a href="{{ route('contact.create')}}" class="btn btn-primary pull-right"><i class="fa fa-plus"> </i> Crear Contacto</a> --}}
             </div><!-- /.col -->
             <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
@@ -47,8 +47,8 @@
                           <td>{{ $contact->celular }}</td>
                           <td>{{ $contact->mensaje }}</td>
                           <td>
-                            <a href="{{ route('contact.show', $contact)}}" class="btn btn-xs btn-info"><i class="fas fa-eye"></i></a>
-                            <a href="{{ route('contact.edit', $contact)}}" class="btn btn-xs btn-info"><i class="fas fa-pencil-alt"></i></a>
+                           {{--  <a href="{{ route('contact.show', $contact)}}" class="btn btn-xs btn-info"><i class="fas fa-eye"></i></a>
+                            <a href="{{ route('contact.edit', $contact)}}" class="btn btn-xs btn-info"><i class="fas fa-pencil-alt"></i></a> --}}
 
 
 

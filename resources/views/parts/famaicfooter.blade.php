@@ -16,8 +16,12 @@
 						<div class="widget menu-widget">
 							<h4 class="widget-title">Productos.</h4>
 							<ul>
-								<li><a href="about.html">About Us</a></li>
-								<li><a href="blog.html">Latest Post</a></li>
+								<li><a href="#">Tina Quesera</a></li>
+								<li><a href="#">Marmitas</a></li>
+                                <li><a href="#">Mezcladoras</a></li>
+								<li><a href="#">Prensa para Queso</a></li>
+                                <li><a href="#">AutoClave</a></li>
+                                <li><a href="#">Tanque de Enfriamiento</a></li>
 
 							</ul>
 						</div>
@@ -26,8 +30,12 @@
 						<div class="widget menu-widget">
 							<h4 class="widget-title">Productos.</h4>
 							<ul>
-								<li><a href="service-details.html">web development</a></li>
-								<li><a href="service-details.html">ui/ux design</a></li>
+                                <li><a href="#">Licuadora Industrial</a></li>
+								<li><a href="#">Despulpadora</a></li>
+                                <li><a href="#">Reactor</a></li>
+								<li><a href="#">Mantequillera</a></li>
+                                <li><a href="#">Paila para Manjar</a></li>
+                                <li><a href="#">Peladora de Ajos</a></li>
 
 							</ul>
 						</div>
@@ -37,8 +45,12 @@
 						<div class="widget menu-widget">
 							<h4 class="widget-title">Productos.</h4>
 							<ul>
-								<li><a href="service-details.html">web development</a></li>
-								<li><a href="service-details.html">ui/ux design</a></li>
+                                <li><a href="#">Baldes y Porongos</a></li>
+								<li><a href="#">Centrifuga</a></li>
+                                <li><a href="#">Destilador</a></li>
+								<li><a href="#">Atomizador</a></li>
+                                <li><a href="#">Trilladora de melón</a></li>
+
 
 						</div>
 					</div>

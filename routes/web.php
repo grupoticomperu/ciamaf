@@ -130,6 +130,7 @@ Route::group([
              Route::resource('whies', 'WhiesController');
              Route::resource('questions', 'QuestionsController');
              Route::resource('services', 'ServicesController');
+             Route::resource('orders', 'OrdersController');
              Route::resource('works', 'WorksController');
              Route::resource('teams', 'TeamsController');
              Route::resource('testimonies', 'TestimoniesController');

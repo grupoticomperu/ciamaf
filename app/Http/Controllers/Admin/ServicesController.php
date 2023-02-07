@@ -33,7 +33,8 @@ class ServicesController extends Controller
     {
 
         $this->validate(request(), [
-    		'title' => 'required'
+    		'title' => 'required',
+            'imagen1' => 'required'
     	]);
 
 

@@ -52,7 +52,7 @@
                         <div class="section-title mb-30">
                             <span class="title-tag">Bienvenido</span>
                             <h2 class="title">
-                                {{ $abouts->title }}
+
                             </h2>
                             <p>
                                 {!! $abouts->our !!}
@@ -89,8 +89,8 @@
                                {{--  <img src="assets/img/about/founder.jpg" alt="Founder"> --}}
                             </div>
                             <div>
-                                <h3>Andrés Caceres</h3>
-                                <span>Gte. Gral</span>
+                                {{-- <h3>Andrés Caceres</h3>
+                                <span>Gte. Gral</span> --}}
                             </div>
                         </div>
                     </div>

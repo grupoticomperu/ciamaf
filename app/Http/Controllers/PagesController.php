@@ -172,6 +172,7 @@ class PagesController extends Controller
 				'celular' => 'required',
 				'mensaje' => 'required',
 				'email' => 'required|email',
+                'g-recaptcha-response' => 'required|captcha',
 			]);
 
 		  $contact = Contact::create([

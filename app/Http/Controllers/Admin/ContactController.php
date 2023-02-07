@@ -49,6 +49,7 @@ class ContactController extends Controller
 
     public function destroy(Contact $contact)
     {
-        //
+        $contact->delete();
+        return redirect()->route('contact.index')->with('flash', 'El Contacto se elimino con exito');
     }
 }
